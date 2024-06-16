@@ -1,0 +1,259 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-image: url('../images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+body .login-container .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 40px; /* Reduced margin-bottom */
+}
+
+body .login-container .titulo img {
+    height: 2vw;
+    width: 2vw;
+    margin-right: 1vw;
+}
+
+body .login-container .titulo h1 {
+    color: #205780;
+    font-size: 3rem;
+}
+
+body .login-container .login-form {
+    background: #205780;
+    padding: 30px; /* Reduced padding */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 35%; /* Reduced max-width */
+    margin-top: 20px;
+    min-height: 30vh; /* Reduced min-height */
+}
+
+body .login-container .login-form h1 {
+    margin-bottom: 30px; /* Reduced margin-bottom */
+    font-size: 2rem; /* Reduced font-size */
+    color: #E4EBF1;
+}
+
+body .login-container .form-group {
+    position: relative;
+    margin-bottom: 20px; /* Reduced margin-bottom */
+}
+
+body .login-container .form-group .form-control {
+    font-size: 1rem; /* Reduced font-size */
+    height: calc(2em + 0.75rem + 2px); /* Reduced height */
+    padding: 8px; /* Reduced padding */
+    padding-left: 40px;
+}
+
+body .login-container .form-group .form-control::placeholder {
+    color: #999;
+    font-size: 1rem; /* Reduced font-size */
+}
+
+body .login-container .form-group .form-control:focus+label,
+.form-control:not(:placeholder-shown)+label {
+    transform: translateY(-150%);
+    font-size: 0.8rem; /* Reduced font-size */
+    color: #999;
+}
+
+body .login-container .btn {
+    font-size: 1rem; /* Reduced font-size */
+    padding: 10px; /* Reduced padding */
+    width: 50%; 
+    margin: 0 auto;
+    display: block;
+    color: #205780;
+    background-color: #E4EBF1;
+    border-radius: 10px;
+    transition: none;
+}
+
+body .login-container .btn:hover {
+    color: #205780;
+    background-color: #9ebdff;
+}
+
+body .login-container .btn:active {
+    color: #205780;
+    background-color: #E4EBF1;
+}
+
+body .login-container .forgot-password {
+    text-align: center;
+    margin-top: 20px; /* Reduced margin-top */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body .login-container .forgot-password a {
+    display: inline-block;
+}
+
+body .login-container a {
+    text-decoration: none;
+    color: #E4EBF1;
+}
+
+body .login-container a:hover {
+    color: #9ebdff;
+}
+
+body .login-container .form-group .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media (max-width: 1200px) {
+    body .login-container .titulo img {
+        height: 3vw;
+        width: 3vw;
+    }
+
+    body .login-container .titulo h1 {
+        font-size: 2.5rem;
+    }
+
+    body .login-container .login-form {
+        padding: 30px;
+        max-width: 40%; /* Adjusted max-width */
+        min-height: 40vh; /* Adjusted min-height */
+        margin-top: 30px; 
+    }
+
+    body .login-container .login-form h1 {
+        font-size: 1.8rem; /* Adjusted font-size */
+        margin-bottom: 30px;
+    }
+
+    body .login-container .form-group {
+        margin-bottom: 20px;
+    }
+
+    body .login-container .form-group .form-control {
+        font-size: 1rem; /* Adjusted font-size */
+        padding-left: 35px;
+    }
+
+    body .login-container .btn {
+        font-size: 1rem; /* Adjusted font-size */
+        padding: 8px;
+        width: 60%;
+    }
+
+    body .login-container .forgot-password {
+        flex-direction: column;
+        margin-top: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    body .login-container .titulo img {
+        height: 4vw;
+        width: 4vw;
+    }
+
+    body .login-container .titulo h1 {
+        font-size: 2rem;
+    }
+
+    body .login-container .login-form {
+        padding: 20px; /* Reduced padding */
+        max-width: 50%; /* Adjusted max-width */
+        min-height: 50vh; /* Adjusted min-height */
+        margin-top: 30px; 
+    }
+
+    body .login-container .login-form h1 {
+        font-size: 1.6rem; /* Adjusted font-size */
+        margin-bottom: 30px;
+    }
+
+    body .login-container .form-group {
+        margin-bottom: 20px;
+    }
+
+    body .login-container .form-group .form-control {
+        font-size: 0.9rem; /* Adjusted font-size */
+        padding-left: 30px;
+    }
+
+    body .login-container .btn {
+        font-size: 0.9rem; /* Adjusted font-size */
+        padding: 8px;
+        width: 60%;
+    }
+
+    body .login-container .forgot-password {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    body .login-container .titulo img {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    body .login-container .titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    body .login-container .login-form {
+        padding: 20px;
+        max-width: 70%; /* Adjusted max-width */
+        min-height: 40vh; /* Adjusted min-height */
+        margin-top: 20px; 
+    }
+
+    body .login-container .login-form h1 {
+        margin-top: 40px; /* Adjusted margin-top */
+        font-size: 1.5rem;
+        margin-bottom: 30px; /* Adjusted margin-bottom */
+    }
+
+    body .login-container .form-group {
+        margin-bottom: 30px; /* Adjusted margin-bottom */
+    }
+
+    body .login-container .form-group .form-control {
+        font-size: 0.9rem; /* Adjusted font-size */
+        padding-left: 30px;
+    }
+
+    body .login-container .btn {
+        font-size: 0.9rem; /* Adjusted font-size */
+        padding: 6px;
+        width: 70%;
+    }
+
+    body .login-container .forgot-password {
+        flex-direction: column;
+        margin-top: 20px; /* Adjusted margin-top */
+    }
+}

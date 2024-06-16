@@ -1,0 +1,66 @@
+  html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    footer {
+        background-color: #205780;
+        color: #E4EBF1;
+        padding: 0.5rem; /* Aumentado el padding para pantallas más pequeñas */
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+
+    footer img {
+        width: 1.5rem; /* Tamaño de las imágenes en pantallas pequeñas */
+        height: auto;
+    }
+
+    footer h3, footer span {
+        margin: 0;
+        font-size: 0.8rem; /* Tamaño del texto en pantallas pequeñas */
+    }
+
+    footer p {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: center;
+    }
+
+    @media (min-width: 769px) {
+        footer {
+            padding: 0.2rem; /* Reducido el padding para pantallas medianas/grandes */
+        }
+
+        footer h3, footer span {
+            font-size: 1rem; /* Tamaño de texto normal en tamaños más grandes */
+        }
+    }
+
+    @media (min-width: 1200px) {
+        footer img {
+            width: 2rem; /* Tamaño de imagen más grande para pantallas grandes */
+        }
+
+        footer h3, footer span {
+            font-size: 1rem; /* Tamaño de texto normal en pantallas grandes */
+        }
+    }

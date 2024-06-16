@@ -1,0 +1,70 @@
+.home {
+    margin-left: 6.5vw;
+    margin-top: 5vw;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.home .grid1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+.home .grid2 {
+    grid-column: 2 / 2;
+    grid-row: 1;
+}
+.home .grid1 h1 {
+    font-size: 3.5vw; 
+    color: #205780;
+}
+.home .grid1 h3 {
+    color: #205780;
+    font-size: 1.2vw; 
+    line-height: 2.3;
+}
+.home .grid1 .buttons {
+    display: flex;
+}
+.home .grid1 .button-official-courses {
+    margin-left: 2vw;
+    background-color: #205780;
+    color: #E4EBF1; 
+    border-color: #205780;
+    padding: 0.8vw 4vw; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8vw; 
+}
+
+.home .grid1 .buttons .button-official-courses:hover {
+    background-color: #E4EBF1; 
+    color: #205780; 
+}
+.home .grid1 .buttons .button-official-courses:active {
+    color: #E4EBF1;
+    background-color: #205780;
+    border-color: #205780;
+}
+.home .grid1 .buttons .button-courses {
+    background-color: #E4EBF1;
+    color: #205780;
+    border-color: #205780;
+    padding: 0.8vw 4vw; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8vw;
+}
+
+.home .grid1 .buttons .button-courses:hover {
+    background-color: #205780;
+    color: #E4EBF1;
+}
+.home .grid1 .buttons .button-courses:active {
+    color: #205780;
+    background-color: #E4EBF1;
+    border-color: #205780;
+}
+.home .grid2 img {
+    width: 50%;
+}

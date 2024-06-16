@@ -1,0 +1,87 @@
+        body {
+            background-image: url('../images/background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .login-container .titulo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .login-container .titulo img {
+            height: 2vw;
+            width: auto;
+            margin-right: 1vw;
+        }
+
+        .login-container .titulo h1 {
+            color: #205780;
+            font-size: 2rem;
+        }
+
+        .login-container .titulo a {
+            text-decoration: none;
+        }
+
+        .login-container .form-group .form-control {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 1200px) {
+            .login-container .titulo img {
+                height: 5vw;
+                width: auto;
+            }
+
+            .login-container .titulo h1 {
+                font-size: 1.8rem;
+            }
+
+            .login-container .form-group .form-control {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .login-container .titulo img {
+                height: 6vw;
+                width: auto;
+            }
+
+            .login-container .titulo h1 {
+                font-size: 1.5rem;
+            }
+
+            .login-container .form-group .form-control {
+                width: 85%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .login-container .titulo img {
+                height: 8vw;
+                width: auto;
+            }
+
+            .login-container .titulo h1 {
+                font-size: 1.2rem;
+            }
+
+            .login-container .form-group .form-control {
+                width: 80%;
+            }
+        }
+
+        .btn-custom {
+            border-color: #133b5c;
+            color: #E4EBF1;
+            background-color: #133b5c;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+        }
